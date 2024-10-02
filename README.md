@@ -12,6 +12,14 @@ sed -i.bak 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 yum install wget -y
 wget https://github.com/income88/Unlimited-OpenVPN-2.13.1/openvpn_2_13_1.sh && sudo sh openvpn_2_13_1.sh
 
+# CÁCH 1: CHỈ SAO LƯU USER
+# TRÊN SERVER CŨ
+sudo cp -r /usr/local/openvpn_as/etc/db/ /path/to/backup/folder/
+sudo cp -r /usr/local/openvpn_as/etc/certs/ /path/to/backup/folder/
+scp /path/to/backup/folder/db/* root@172.27.105.23:/usr/local/openvpn_as/etc/db/  
+"Thay IP Server mới"
+
+#CÁCH 2: SAO LƯU TẤT CẢ (KỂ CẢ LISENCE
 # CÁCH SAO LƯU DỮ LIỆU TỪ SERVER CŨ
 Dùng FileZilla để tạo đường dẫn: /path/to/backup/ cho Server Open VPN cần chuyển tới sau đó:
 
