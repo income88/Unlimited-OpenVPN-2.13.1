@@ -19,7 +19,7 @@ sudo cp -r /usr/local/openvpn_as/etc/certs/ /path/to/backup/folder/
 scp /path/to/backup/folder/db/* root@172.27.105.23:/usr/local/openvpn_as/etc/db/  
 "Thay IP Server mới"
 
-#CÁCH 2: SAO LƯU TẤT CẢ (KỂ CẢ LISENCE
+#CÁCH 2: SAO LƯU TẤT CẢ (KỂ CẢ LISENCE)
 # CÁCH SAO LƯU DỮ LIỆU TỪ SERVER CŨ
 Dùng FileZilla để tạo đường dẫn: /path/to/backup/ cho Server Open VPN cần chuyển tới sau đó:
 
