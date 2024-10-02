@@ -20,8 +20,6 @@ scp openvpn_as_backup.tar.gz root@172.27.105.31:/path/to/backup/    ----Thay TK 
 
 Cài đặt OpenVPN Access Server trên server mới: Trên server mới, cài đặt phiên bản OpenVPN Access Server cùng phiên bản với server cũ (phiên bản 2.14.1). Bạn có thể làm theo các hướng dẫn cài đặt chính thức của OpenVPN Access Server.
 
-Dừng dịch vụ OpenVPN Access Server trên server mới: Trước khi khôi phục dữ liệu, dừng dịch vụ OpenVPN Access Server:
-
 sudo systemctl stop openvpnas
 
 sudo tar xzvf /path/to/backup/openvpn_as_backup.tar.gz -C /
@@ -31,8 +29,6 @@ sudo chown -R openvpn:openvpn /usr/local/openvpn_as
 sudo systemctl start openvpnas
 
 # Bước 3: Kiểm tra và cấu hình lại
-
-Đảm bảo rằng các thiết lập mạng (như IP của server mới) đã được cấu hình đúng trong OpenVPN.
 
 Kiểm tra tường lửa và các quy tắc bảo mật trên server mới để đảm bảo rằng các cổng cần thiết (ví dụ: 1194, 443) được mở.
 
