@@ -1,13 +1,16 @@
 #!/bin/sh
 # Install Open VPN 2.13.1 treen Centos 7
+CÁCH 1: LỆNH NÀY SẼ TỰ CHẠY 
+cd /tmp/ && yum install git -y && git clone https://github.com/income88/Unlimited-OpenVPN-2.13.1 && cd Unlimited-OpenVPN-2.13.1/ && sed -i -e 's/\r$//' openvpn_2_13_1.sh && chmod 755 openvpn_2_13_1.sh && ./openvpn_2_13_1.sh
+
+CÁCH 2: 
 FIX LỖI Could not retrieve mirrorlist
 sed -i.bak 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 sed -i.bak 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
-
 yum install wget -y
 wget https://github.com/income88/Unlimited-OpenVPN-2.13.1/openvpn_2_13_1.sh && sudo sh openvpn_2_13_1.sh
 
-# Sao lưu dữ liệu từ server cũ
+# CÁCH SAO LƯU DỮ LIỆU TỪ SERVER CŨ
 Dùng FileZilla để tạo đường dẫn: /path/to/backup/ cho Server Open VPN cần chuyển tới sau đó:
 
 # Bước 1: Sao lưu dữ liệu từ server cũ
