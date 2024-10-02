@@ -16,6 +16,7 @@ wget https://github.com/income88/Unlimited-OpenVPN-2.13.1/openvpn_2_13_1.sh && s
 CÁCH SAO LƯU DỮ LIỆU TỪ SERVER CŨ
 # CÁCH 1: CHỈ SAO LƯU USER
 # TRÊN SERVER CŨ
+Dùng FileZilla để tạo đường dẫn cho server cũ: /path/to/backup/
 sudo cp -r /usr/local/openvpn_as/etc/db/ /path/to/backup/folder/
 sudo cp -r /usr/local/openvpn_as/etc/certs/ /path/to/backup/folder/
 scp /path/to/backup/folder/db/* root@172.27.105.23:/usr/local/openvpn_as/etc/db/  
