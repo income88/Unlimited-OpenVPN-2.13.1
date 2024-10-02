@@ -63,4 +63,4 @@ systemctl restart openvpnas
 systemctl status openvpnas
 echo "ACCOUNT!! USER:openvpn - PASSWORD: 123456"
 echo "=========================SETUP UNLIMITED OPENVPN 2.13.1 SUCCESS=============================="
-cd/
+cd
