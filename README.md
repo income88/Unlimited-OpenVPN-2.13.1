@@ -4,7 +4,7 @@ FIX LỖI Could not retrieve mirrorlist
 sed -i.bak 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 sed -i.bak 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
-yum install wget
+yum install wget -y
 wget https://github.com/income88/Unlimited-OpenVPN-2.13.1/openvpn_2_13_1.sh && sudo sh openvpn_2_13_1.sh
 
 # Sao lưu dữ liệu từ server cũ
