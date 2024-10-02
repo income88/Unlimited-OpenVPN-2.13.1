@@ -17,6 +17,7 @@ sudo systemctl stop openvpnas
 sudo tar xzvf /path/to/backup/openvpn_as_backup.tar.gz -C /
 sudo chown -R openvpn:openvpn /usr/local/openvpn_as
 sudo systemctl start openvpnas
+
 # Bước 3: Kiểm tra và cấu hình lại
 Kiểm tra tường lửa và các quy tắc bảo mật trên server mới để đảm bảo rằng các cổng cần thiết (ví dụ: 1194, 443) được mở.
 Sau khi hoàn tất, server OpenVPN mới của bạn sẽ hoạt động giống như server cũ với tất cả các cấu hình và dữ liệu người dùng đã được chuyển.
